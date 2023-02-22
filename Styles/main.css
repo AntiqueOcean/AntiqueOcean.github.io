@@ -1,0 +1,13 @@
+@import 'reset.css';
+@import 'themes.css';
+@import 'fontset.css';
+@import 'designs.css';
+@import 'resize.css';
+
+body {
+    background-color: var(--color0);
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scrollbar-width: thin !important;
+}
+

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" class="color-1 font-medium option-normal">
+<head>
+    <!-- meta data -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- appearance -->
+    <title>AntiqueOcean</title>
+    <link rel="icon" type="image/x-icon" href="styles/icon.ico">
+    <!-- scripts and style -->
+    <link rel="stylesheet" href="Styles/main.css">
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="Scripts/main.js" defer></script>
+</head>
+<body>
+    <div>
+        <div>
+            <h1>
+                <a>AntiqueOcean</a>
+                <a>Color:</a>
+                <button style="--accent:#61a9d0" onclick="setColor(1);">1</button>
+                <button style="--accent:#6e6e6e" onclick="setColor(2);">2</button>
+                <button style="--accent:#ddd; --accent2: #202020; --accent3: #fff;" onclick="setColor(3);">3</button>
+                <a>&nbsp&nbspFont:</a>
+                <button onclick="setFontSize(1);">+</button>
+                <button onclick="setFontSize(-1);">-</button>
+            </h1>
+            <div id="command-area">
+                <ul>
+                    <li>
+                        <big>@ 2023</big> Muhammad Ali kalantari. AntiqueOcean <small>©</small> All Rights Reserved.<br/><br/><small>Type <b style="color:var(--color4-2)">help</b> to see the list of commands.</small>
+                    </li>
+                    <li id="input-area" style="margin-bottom: 80px;">
+                        <a id="username"></a>
+                        <form id="input-form">
+                            <input id="input-text" type="text" autocomplete="off" autofocus>
+                            <input type="submit" hidden>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <svg id="scrollButton" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M5 9C5 5.13401 8.13401 2 12 2C15.866 2 19 5.13401 19 9V15C19 18.866 15.866 22 12 22C8.13401 22 5 18.866 5 15V9ZM12 4C9.23858 4 7 6.23858 7 9V15C7 17.7614 9.23858 20 12 20C14.7614 20 17 17.7614 17 15V9C17 6.23858 14.7614 4 12 4ZM12 7C12.5523 7 13 7.44772 13 8V11C13 11.5523 12.5523 12 12 12C11.4477 12 11 11.5523 11 11V8C11 7.44772 11.4477 7 12 7Z"/>
+        </div>
+    </div>
+
+    <div id="post">
+        <p>
+            <big><b>There are no hidden secrets in design, just innovation.</b></big>
+            <br/><br/>
+            meaning you don’t need to invent the wheel, but also you shouldn't buy a Lamborghini just to go to the grocery store. Coming up with cost effective yet creative ideas is the key. There is always a middle ground, and for me it’s the best ground to have fun on. It’s safe and balanced!
+            <br/><br/>
+            when the average user visits your website, they don’t care if you used React, angular, flutter or any other JS framework. Most of them probably don’t even know what JS is or what it stand’s for. They care about performance, functionality, usability and visuality. In summary, what matters is mostly user experience.
+            <br/><br/>
+            There are times that an old simple designs is much more beneficial than a complicated “modern” one. For example compare the Google search with Bing.com and it’s weird design, both almost do the same job, but one brings you comfort and simplicity and the other one dumps a page full of unwanted news and ads on you.
+            <br/><br/>
+            Trends are like products, they deprecate, but innovation is the factory, it can be timeless. it lets you to come up with ideas beyond trends and limitations, and that’s what makes you, your work and your brand, <b>UNIQUE</b>.
+        </p>
+    </div>
+
+    <div>
+        <ul>
+            <li>
+                <h1>[ about me ]</h1>
+                <div>
+                    <p>    
+                        Hi <a id="username"></a>, I’m Muhammad ali Kalantari.<br/>
+                        I'm an art enthusiast and Studied theater at collage. Also Have done 6 years of c++ programing, 3 years of game dev With unreal engine and recently started web design. 
+                        <br/><br/>
+                        Unfortunately because of the current state of my country (sanctions), I can’t put out my work in the market and make some fat cash! but I don’t care much about that. making stuff is the fun part for me!
+                        <br/><br/>
+                        I love animals and care about their wellbeing.<br/>
+                        I have two lovely lovebirds who hate me! 
+                        <br/><br/>
+                        I worked as a barista for a short while and also a soul sucking government job. have done some translation works and created bunch of translated pages in Wikipedia. (link)
+                        <br/><br/>
+                        I currently live in Tehran. you can get my contact from the command line above. If you don’t know how to work it, use the links below.
+                    </p>
+                    <button onclick="window.open('https://t.me/antiqueocean', '_blank').focus();">Telegram</button>
+                    <button onclick="location.href='mailto:antiqueocean.dev@gmail.com?subject=From Webpage';">E-Mail</button>
+                </div>
+            </li>
+            <li>
+                <h1>[ future plans ]</h1>
+                <div>
+                    <p>
+                        ✚ I’m trying to make a blockchain social media website that encrypts every single post, including messages, photos, videos or any form of media. Why?  Well I’m not going to tell you all my plans!
+                        <br/><br/>
+                        ✚ I really like QT6 and how it handles ui design, planning on learning it and making a simple todo list app for mobile phones.
+                        <br/><br/>
+                        ✚ click the button below to suggest a new project.
+                    </p>
+                    <button>Assign!</button>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+    <div>
+        <h1>Projects:</h1>
+        <ul>
+
+
+            <li>
+                <img src="Assets/icons/tabdilyaar.png" style="--accent: #262626"/>
+                <h1>Tabdilyaar / تبدیل‌یار</h1>
+                <p dir="rtl">نرم‌افزار تحت وب تبدیل متن سامانه آموزشیار دانشگاه آزاد</p>
+                <button onclick="window.open('https://antiqueocean.github.io/TabdilYaar/', '_blank').focus();">برو به صفحه</button>
+            </li>
+
+        </ul>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+.color-1 {
+    --color-border: transparent;
+    --color0: #61a9d0; /* body bg */
+    --color1: #262626; /* window bg */
+    --color2: #f2f2f2; /* window differ */
+    --color3: #0000008c; /* window's shadow */
+    --color4-0: #fff;
+    --color4-1: #eee;
+    --color4-2: #ddd;
+    --color4-3: #ccc;
+    --color4-4: #bbb;
+    --color4-5: #aaa;
+}
+
+.color-2 {
+    --color-border: transparent;
+    --color0: #6e6e6e; /* body bg */
+    --color1: #262626; /* window bg */
+    --color2: #f2f2f2; /* window differ */
+    --color3: #0000008c; /* window's shadow */
+    --color4-0: #fff;
+    --color4-1: #eee;
+    --color4-2: #ddd;
+    --color4-3: #ccc;
+    --color4-4: #bbb;
+    --color4-5: #aaa;
+}
+
+.color-3 {
+    --color-border: transparent;
+    --color0: #94c2db; /* body bg */
+    --color1: #f2f2f2; /* window bg */
+    --color2: #262626; /* window differ */
+    --color3: #00000050; /* window's shadow */
+    --color4-0: #000;
+    --color4-1: #303030;
+    --color4-2: #404040;
+    --color4-3: #505050;
+    --color4-4: #606060;
+    --color4-5: #707070;
+}
+
+.color-4 {
+    --color-border: #fff;
+    --color0: #000; /* body bg */
+    --color1: #000; /* window bg */
+    --color2: #fff; /* window differ */
+    --color3: #00000000; /* window's shadow */
+    --color4-0: #fff;
+    --color4-1: #fff;
+    --color4-2: #fff;
+    --color4-3: #fff;
+    --color4-4: #fff;
+    --color4-5: #fff;
+    --color-exeption0: #fff;
+    --color-exeption2: #000;
+    --color-exeption4: #fff;
+}
+
+.color-5 {
+    --color-border: transparent;
+    --color0: #df6668; /* body bg */
+    --color1: #262626; /* window bg */
+    --color2: #f2f2f2; /* window differ */
+    --color3: #0000008c; /* window's shadow */
+    --color4-0: #fff;
+    --color4-1: #eee;
+    --color4-2: #ddd;
+    --color4-3: #ccc;
+    --color4-4: #bbb;
+    --color4-5: #aaa;
+}
+
+
+
+.color-6 {
+    --color-border: #b2b2b2;
+    --color0: #10c3a9; /* body bg */
+    --color1: #0200a6; /* window bg */
+    --color2: #b2b2b2; /* window differ */
+    --color3: #00000000; /* window's shadow */
+    --color4-0: #fff;
+    --color4-1: #eee;
+    --color4-2: #ddd;
+    --color4-3: #ccc;
+    --color4-4: #bbb;
+    --color4-5: #aaa;
+}
+
+.color-7 {
+    --color-border: transparent;
+    --color0: #bc0d00; /* body bg */
+    --color1: #f7c12b; /* window bg */
+    --color2: #224e2e; /* window differ */
+    --color3: #0000008c; /* window's shadow */
+    --color4-0: #101010;
+    --color4-1: #202020;
+    --color4-2: #303030;
+    --color4-3: #404040;
+    --color4-4: #505050;
+    --color4-5: #606060;
+}
+
+
+
+
+
+
+.font-small {
+    --font-tiny: 8px;
+    --font-small: 12px;
+    --font-medium: 14px;
+    --font-big: 16px;
+    --font-bigger: 18px;
+    --font-huge: 20px;
+}
+
+.font-medium {
+    --font-tiny: 10px;
+    --font-small: 14px;
+    --font-medium: 16px;
+    --font-big: 18px;
+    --font-bigger: 20px;
+    --font-huge: 22px;
+}
+
+.font-big {
+    --font-tiny: 14px;
+    --font-small: 18px;
+    --font-medium: 20px;
+    --font-big: 22px;
+    --font-bigger: 24px;
+    --font-huge: 26px;
+}
+
+.font-huge {
+    --font-tiny: 16px;
+    --font-small: 20px;
+    --font-medium: 22px;
+    --font-big: 24px;
+    --font-bigger: 26px;
+    --font-huge: 28px;
+}
+
+.option-normal {
+    --main-padding: 24px;
+}

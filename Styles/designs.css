@@ -1,0 +1,435 @@
+:root {
+    --max-width: 1320px;
+    --main-padding: 24px;
+}
+
+::selection {
+    background-color: var(--color0) !important;
+    color: var(--color2) !important;
+}
+
+body > div:nth-child(1) {
+    padding: var(--main-padding);
+    width: 100%;
+    padding: var(--main-padding);
+    padding-bottom: 0;
+    box-sizing: border-box;
+    height: calc(100vh - (var(--main-padding) * 3));
+    max-height: calc(100vh - (var(--main-padding) * 3));
+}
+body > div:nth-child(1) > div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    box-shadow: 0 0  12px var(--color3);
+    border-radius: 6px;
+    box-sizing: border-box;
+    outline: 2px solid var(--color-border, transparent);
+}
+
+body > div:nth-child(1) > div > h1 {
+    display: flex;
+    width: 100%;
+    padding: 4px 4px 4px 12px;
+    box-sizing: border-box;
+    background-color: var(--color2);
+    flex-wrap: wrap;
+    gap: 4px;
+    height: fit-content;
+    align-items: center;
+    border-radius: 6px 6px 0 0;
+    user-select: none;
+    z-index: 1;
+    position: relative;
+}
+
+body > div:nth-child(1) > div > h1::after {
+    content: '';
+    position: absolute;
+    bottom: -64px;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    background: linear-gradient(180deg, var(--color1) 0%, rgba(0,0,0,0) 100%);
+    pointer-events: none;
+}
+
+body > div:nth-child(1) > div > h1 > a {
+    color: var(--color0);
+    font-size: var(--font-bigger);
+    height: auto;
+    padding: 4px 0;
+    box-sizing: border-box;
+    flex-grow: 1;
+    overflow: hidden;
+    cursor: pointer;
+    min-width: fit-content;
+}
+
+body > div:nth-child(1) > div > h1 > a:hover {
+    color: var(--color1);
+}
+
+body > div:nth-child(1) > div > h1 > a:not(:first-of-type) {
+    width: fit-content;
+    flex-grow: 0;
+    margin-left: 0px;
+    margin-right: 2px;
+    color: var(--color1);
+    font-size: var(--font-medium);
+    text-align: center;
+    pointer-events: none;
+}
+
+body > div:nth-child(1) > div > h1 > button {
+    background-color: var(--accent, var(--color0));
+    width: auto;
+    min-width: calc(var(--font-medium) * 2);
+    height: calc(var(--font-medium) * 2);
+    border-radius: 4px;
+    color: var(--accent2, var(--color2));
+    font-size: var(--font-small);
+    text-align: center;
+    transition-duration: 0.1s;
+    cursor: pointer;
+}
+
+body > div:nth-child(1) > div > h1 > button:hover {
+    background-color: var(--accent3, var(--color1));
+    font-size: var(--font-bigger);
+}
+
+body > div:nth-child(1) > div > div {
+    display: flex;
+    padding: 12px;
+    border-radius: 0 0 6px 6px;
+    box-sizing: border-box;
+    width: 100%;
+    flex-grow: 1;
+    background-color: var(--color1);
+    overflow: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+}
+
+
+body > div:nth-child(1) > div > div > ul {
+    width: 100%;
+    text-align: left;
+}
+
+body > div:nth-child(1) > div > div > ul > li {
+    margin-top: 16px;
+    color: var(--color4-4);
+    font-size: var(--font-medium);
+    margin-bottom: 24px;
+}
+body > div:nth-child(1) > div > div > ul > li+li {
+    color: var(--color4-1);
+    width: 100%;
+    margin: 8px 0 8px 0;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+body > div:nth-child(1) > div > div > ul > li+li > a:is(:first-of-type) {
+    color: var(--color4-4);
+    user-select: none;
+    width: fit-content;
+    flex-grow: 0;
+}
+
+body > div:nth-child(1) > div > div > ul > li+li > a:is(:first-of-type)::after {
+    content: ' ~$ ';
+
+}
+
+body > div:nth-child(1) > div > div > ul > li+li > a:not(:first-of-type) {
+    color: var(--accent, var(--color4-3));
+}
+
+body > div:nth-child(1) > div > div > ul > li+li > span {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 8px 8px 0 16px;
+    box-sizing: border-box;
+    color: var(--color4-2);
+    white-space: pre-line;
+    font-size: var(--font-medium);
+    line-height: calc(var(--font-medium) + (var(--font-tiny) / 2));
+}
+
+body > div:nth-child(1) > div > div > ul > li+li > form {
+    font-size: var(--font-medium);
+    flex-grow: 1;
+    padding: 0;
+}
+
+body > div:nth-child(1) > div > div > ul > li+li > form > input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    width: 100%;
+    font-size: var(--font-medium);
+    padding: 0;
+    color: var(--color4-1);
+}
+
+body > div:nth-child(1) > div > svg {
+    background-color: var(--color1);
+    border: 12px solid var(--color0);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 16px;
+    align-self: center;
+    fill: var(--color-exeption0, var(--color0));
+    outline: 2px solid var(--color-border, transparent);
+    padding: 12px;
+    user-select: none;
+    transition-duration: 0.2s;
+}
+
+body > div:nth-child(1) > div > svg:hover {
+    cursor: pointer;
+    padding: 10px;
+
+}
+
+small {
+    font-size: var(--font-small);
+}
+
+big {
+    font-size: var(--font-big);
+}
+
+body > div:nth-child(2){
+    opacity: 0;
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: var(--color-exeption2, var(--color2));
+    transition-duration: 1s;
+    outline: 2px solid var(--color-border, transparent);
+}
+
+body > div:nth-child(2).active{
+    opacity: 1;
+}
+
+body > div:nth-child(2) > p {
+    width: 100%;
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: var(--font-medium);
+    height: auto;
+    max-height: auto;
+    line-height: calc(var(--font-medium) + 8px);
+    color: var(--color-exeption4, var(--color1));
+}
+
+body > div:nth-child(3) {
+    max-width: var(--max-width);
+    margin: 16px auto 0 auto;
+    box-sizing: border-box;
+}
+
+body > div:nth-child(3) > ul {
+    display: flex;
+    width: 100%;
+    margin: 0 auto 32px auto;
+    gap: 8px;
+    padding: 0 16px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+body > div:nth-child(3) > ul > li{
+    display: flex;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    outline: 2px solid var(--color-border, transparent);
+    border-radius: 6px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+body > div:nth-child(3) > ul > li > h1{
+    border-radius: 6px 6px 0 0;
+    flex-grow: 0;
+    height: fit-content;
+    background-color: var(--color2);
+    text-align: center;
+    padding: 8px 12px;
+    font-size: var(--font-big);
+    color: var(--color1);
+    user-select: none;
+}
+
+body > div:nth-child(3) > ul > li > div {
+    display: flex;
+    flex-grow: 1;
+    padding: 16px;
+    background-color: var(--color1);
+    border-radius: 0 0 6px 6px;
+    flex-wrap: wrap;
+    gap: 6px;
+    box-sizing: border-box;
+}
+
+body > div:nth-child(3) > ul > li:nth-child(3){
+    width: 100%;
+}
+
+body > div:nth-child(3) > ul > li > div > p {
+    width: 100%;
+    flex-grow: 1;
+    font-size: var(--font-medium);
+    color: var(--color2);
+    line-height: calc(var(--font-medium) + 4px);
+    margin-bottom: 24px;
+}
+
+body > div:nth-child(3) > ul > li > div > button {
+    flex-grow: 1;
+    min-width: fit-content;
+    height: max-content;
+    border-radius: 4px;
+    background-color: var(--color4-2);
+    color: var(--color1);
+    padding: 6px 12px;
+    font-size: var(--font-medium);
+    user-select: none;
+    transition-duration: 0.15s;
+    align-self: flex-end;
+}
+
+body > div:nth-child(3) > ul > li > div > button:hover {
+
+    border-radius: 2px;
+    background-color: var(--color4-1);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+body > div:nth-child(4) {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 16px;
+    max-width: var(--max-width);
+    margin: 0 auto 16px auto;
+}
+
+body > div:nth-child(4) > h1 {
+    width: 100%;
+    font-size: var(--font-huge);
+    color: var(--color1);
+    margin: 16px 0;
+    background-color: var(--color2);
+    padding: 12px 16px;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+body > div:nth-child(4) > ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: left;
+    box-sizing: border-box;
+}
+
+body > div:nth-child(4) > ul > li{
+    flex-grow: 1;
+    width: calc(var(--max-width) / 3 - 16px);
+    box-sizing: border-box;
+    padding: 16px;
+    border-radius: 6px;
+    background-color: var(--color1);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    outline: 2px solid var(--color-border, transparent);
+    transition-duration: 0.2s;
+    user-select: none;
+    box-shadow: 0 0 4px var(--color3);
+}
+
+body > div:nth-child(4) > ul > li:hover {
+    border-radius: 0px;
+}
+
+body > div:nth-child(4) > ul > li > img{
+    width: 100px;
+    aspect-ratio: 1;
+    background-color: var(--accent, var(--color2));
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    align-self: center;
+    pointer-events: none;
+    margin: 32px 0;
+    transition-duration: 0.15s;
+}
+
+body > div:nth-child(4) > ul > li:hover > img {
+    width: 120px;
+    margin: 22px -10px;
+}
+
+body > div:nth-child(4) > ul > li > h1 {
+    width: 100%;
+    height: fit-content;
+    font-size: var(--font-bigger);
+    color: var(--color4-3);
+    text-align: center;
+    transition-duration: 0.15s;
+}
+
+body > div:nth-child(4) > ul > li:hover > h1 {
+    letter-spacing: 1.5px;
+    color: var(--color4-1);
+
+}
+
+body > div:nth-child(4) > ul > li > p {
+    height: fit-content;
+    width: 100%;
+    font-size: var(--font-medium);
+    margin: 16px 0;
+    color: var(--color4-1);
+    box-sizing: border-box;
+    flex-grow: 1;
+    line-height: calc(var(--font-medium) +  8px);
+    text-align: center;
+}
+
+body > div:nth-child(4) > ul > li > button {
+    width: 100%;
+    height: fit-content;
+    padding: 6px 12px;
+    font-size: var(--font-medium);
+    background-color: var(--color4-2);
+    color: var(--color1);
+    border-radius: 4px;
+    transition-duration: 0.15s;
+}
+
+body > div:nth-child(4) > ul > li > button:hover {
+    border-radius: 2px;
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: var(--color4-1);
+}
