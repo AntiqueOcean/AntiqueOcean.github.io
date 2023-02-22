@@ -146,7 +146,7 @@ document.addEventListener("keydown", (e) => {
         if (e.key === 'ArrowUp' && currentListIndex < inputList.length-1) {
             currentListIndex++;
             inputText.value = inputList[currentListIndex];
-
+            inputText.selectionStart = inputText.selectionEnd = inputText.value.length;
         }
         else if (e.key === 'ArrowDown' && currentListIndex >= 0) {
             currentListIndex--;
@@ -157,8 +157,8 @@ document.addEventListener("keydown", (e) => {
             else {
                 inputText.value = '';
             }
+            inputText.selectionStart = inputText.selectionEnd = inputText.value.length;
         }
-        inputText.selectionStart = inputText.selectionEnd = inputText.value.length;
     }
   });
 
@@ -179,6 +179,8 @@ function out(_input) {
     var input = _input.trim().toLowerCase();
 
     switch(input){
+        case '':
+            return '!skip';
         case 'help':
         return String('╔═════╬═╡ H E L P ╞═╬═════╗\r\n\
 ╠═■ List of Available Commands:\r\n\
@@ -207,65 +209,45 @@ function out(_input) {
 ╟── exit : closes this tab.\r\n\
 ╚═╬╡\r\n\
                         ');
-            break;
         case 'get':
             return String("invalid input, add requiring information after \"get\".");
-            break;
         case 'get id':
             return String("invalid, add requiring platform after \"id\".");
-            break;
         case 'get id telegram':
             return String("@AntiqueOcean");
-            break;
         case 'get id t':
             return String("@AntiqueOcean");
-            break;
         case 'get id telegram-channel':
             return String("@AntiqueOcean_ch");
-            break;
         case 'get id twitch':
             return String("twitch.tv/antiqueocean");
-            break;
         case 'get id reddit':
             return String("u/antiqueocean");
-            break;
         case 'get id youtube':
             return String("@antiqueocean8561");
-            break;
         case 'get number':
             return String("+98 993 992 7949");
-            break;
         case 'get email':
             return String("AntiqueOcean.dev@gmail.com");
-            break;
         case 'get mail':
             return String("AntiqueOcean.dev@gmail.com");
-            break;
         case 'get name':
             return String("Muhammad Ali Kalantari");
-            break;
-
         case 'set':
             return String("invalid input, add setting data after \"set\".");
-            break;
         case 'set username':
             return String("invalid input, add name after \"username\".");
-            break;
         case 'set username':
             return String("invalid input, add name after \"username\".");
-            break;
         case 'set fontsize':
             return String("invalid input, add up/down after \"font-size\".");
-            break;
         case 'set fontsize up': {
             setFontSize(1);
             return String("font size incereased.");
-            break;
         }
         case 'set fontsize down': {
             setFontSize(-1);
             return String("font size decreased.");
-            break;
         }
         case 'set color': {
             return String("invalid input, add index after \"color\".");
@@ -298,17 +280,14 @@ function out(_input) {
                 localStorage.setItem("UniqueUserName", username.trim());
                 setAllUserName();
                 return String("username changed to: " +  username.trim());
-                break;
             }
             if (input.indexOf("set color ") != -1)
             {
                 var index = String(input).replace("set color", "").trim();
                 return setColor(index);
-                break;
             }
             else 
             return String('Err: The syntax "' + input + '" is not defined');
-            break;
         }
     }
 }
