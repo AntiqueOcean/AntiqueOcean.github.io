@@ -8,6 +8,18 @@
     color: var(--color2) !important;
 }
 
+.reveal {
+    opacity: 0;
+    transition-duration: 1s;
+    filter: blur(4px);
+}
+
+.active {
+    opacity: 1;
+    filter: blur(0);
+}
+
+
 body > div:nth-child(1) {
     padding: var(--main-padding);
     width: 100%;
@@ -212,19 +224,13 @@ big {
 }
 
 body > div:nth-child(2){
-    opacity: 0;
     margin-top: 100px;
     width: 100%;
     height: auto;
     padding: 40px;
     box-sizing: border-box;
     background-color: var(--color-exeption2, var(--color2));
-    transition-duration: 1s;
     outline: 2px solid var(--color-border, transparent);
-}
-
-body > div:nth-child(2).active{
-    opacity: 1;
 }
 
 body > div:nth-child(2) > p {
@@ -364,7 +370,7 @@ body > div:nth-child(4) > ul > li{
     outline: 2px solid var(--color-border, transparent);
     transition-duration: 0.2s;
     user-select: none;
-    box-shadow: 0 0 4px var(--color3);
+    box-shadow: 0 0 6px var(--color3);
 }
 
 body > div:nth-child(4) > ul > li:hover {

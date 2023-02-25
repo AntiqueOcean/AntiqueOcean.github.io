@@ -3,9 +3,12 @@ const commandArea = document.getElementById('command-area');
 const inputArea = document.getElementById('input-area');
 const inputForm = document.getElementById('input-form');
 const inputText = document.getElementById('input-text');
+const postArea = document.getElementById('post');
 const inputUsername = document.getElementById('username');
 const scrollButton = document.getElementById('scrollButton');
-const postItem = document.getElementById('post');
+const revealElements = document.getElementsByClassName('reveal');
+
+
 let inputList = [];
 var currentListIndex = -1;
 
@@ -136,7 +139,7 @@ function focus(){
 commandArea.addEventListener ('click', focus);
 
 function scrollDown(){
-    postItem.scrollIntoView({behavior: 'smooth', block: 'start'});
+    postArea.scrollIntoView({behavior: 'smooth', block: 'start'});
 }
 scrollButton.addEventListener('click', scrollDown);
 
@@ -162,18 +165,21 @@ document.addEventListener("keydown", (e) => {
     }
   });
 
+let revealedItems = [];
 function reveal() {
-      var windowHeight = window.innerHeight;
-      var elementTop = postItem.getBoundingClientRect().top;
-      var elementVisible = 150;
-      if (elementTop < windowHeight - elementVisible) {
-        postItem.classList.add("active");
-      } else {
-        postItem.classList.remove("active");
-      }
-  }
-  window.addEventListener("scroll", reveal);
-  reveal();
+    var windowHeight = window.innerHeight;
+
+    for (i = 0; i < revealElements.length; i++) {
+        var elementTop = revealElements[i].getBoundingClientRect().top;
+        var elementVisible = 80;
+        if (elementTop < windowHeight - elementVisible) 
+            revealElements[i].classList.add("active");  
+        else
+            revealElements[i].classList.remove("active");
+    }
+}
+window.addEventListener("scroll", reveal);
+
 
 function out(_input) {
     var input = _input.trim().toLowerCase();

@@ -19,9 +19,9 @@
             <h1>
                 <a>AntiqueOcean</a>
                 <a>Color:</a>
-                <button style="--accent:#61a9d0" onclick="setColor(1);">1</button>
-                <button style="--accent:#6e6e6e" onclick="setColor(2);">2</button>
-                <button style="--accent:#ddd; --accent2: #202020; --accent3: #fff;" onclick="setColor(3);">3</button>
+                <button style="--accent:#ddd; --accent2: #202020; --accent3: #fff;" onclick="setColor(1);">1</button>
+                <button style="--accent:#61a9d0; --accent3: #7abadd;" onclick="setColor(2);">2</button>
+                <button style="--accent:#6e6e6e; --accent2: #fff; --accent3: #555;" onclick="setColor(3);">3</button>
                 <a>&nbsp&nbspFont:</a>
                 <button onclick="setFontSize(1);">+</button>
                 <button onclick="setFontSize(-1);">-</button>
@@ -45,7 +45,7 @@
         </div>
     </div>
 
-    <div id="post">
+    <div id="post" class="reveal">
         <p>
             <big><b>There are no hidden secrets in design, just innovation.</b></big>
             <br/><br/>
@@ -59,7 +59,7 @@
         </p>
     </div>
 
-    <div>
+    <div class="reveal">
         <ul>
             <li>
                 <h1>[ about me ]</h1>
@@ -98,10 +98,17 @@
 
     </div>
 
-    <div>
+    <div class="reveal">
         <h1>Projects:</h1>
         <ul>
 
+
+            <li>
+                <img src="Assets/icons/illuminated.png" style="--accent: #000"/>
+                <h1>Illuminated Isometric Scene</h1>
+                <p>made with ue4. <a style='color: var(--color4-4);' href="https://www.youtube.com/watch?v=_EBDsX1S62w" target="_blank">Preview</a></p>
+                <button onclick="window.open('https://antiqueocean.itch.io/illuminated-isometric-scene', '_blank').focus();">Visit Page & Download</button>
+            </li>
 
             <li>
                 <img src="Assets/icons/tabdilyaar.png" style="--accent: #262626"/>
