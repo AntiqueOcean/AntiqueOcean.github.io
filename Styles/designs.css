@@ -1,7 +1,4 @@
-:root {
-    --max-width: 1320px;
-    --main-padding: 24px;
-}
+
 
 ::selection {
     background-color: var(--color0) !important;
@@ -396,18 +393,50 @@ body > div:nth-child(4) > ul > li:hover > img {
 }
 
 body > div:nth-child(4) > ul > li > h1 {
-    width: 100%;
     height: fit-content;
     font-size: var(--font-bigger);
     color: var(--color4-3);
     text-align: center;
     transition-duration: 0.15s;
+    margin-bottom: 12px;
+}
+
+body > div:nth-child(4) > ul > li > h2 {
+    height: auto;
+    width: 100%;
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+}
+
+body > div:nth-child(4) > ul > li > h2 sub {
+    background-color: var(--color4-3);
+    color: var(--color1);
+    padding: 4px 6px;
+    font-size: var(--font-small);
+    width: fit-content;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.green {
+    background-color: green !important;
+    color: white !important;
+}
+
+.orange {
+    background-color: orange !important;
+    color: black !important;
+}
+
+.red {
+    background-color: red !important;
+    color: black !important;
 }
 
 body > div:nth-child(4) > ul > li:hover > h1 {
     letter-spacing: 1.5px;
     color: var(--color4-1);
-
 }
 
 body > div:nth-child(4) > ul > li > p {

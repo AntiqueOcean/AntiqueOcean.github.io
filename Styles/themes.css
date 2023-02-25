@@ -1,4 +1,9 @@
 
+:root {
+    --max-width: 1320px;
+    --main-padding: 24px;
+}
+
 .color-1 {
     --color-border: transparent;
     --color0: #94c2db; /* body bg */
